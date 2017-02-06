@@ -32,17 +32,17 @@ describe('Box',() =>{
      });
 
     it('should render out full component', () => {
-    const wrapper = shallow(<Box css="empty" text="bob@aol.com" id="3" />);
-    const html = wrapper.html();
-    expect(html).to.equal('<div class="box"><div data-id="3" class="empty">bob@aol.com</div></div>');
-        });
+        const wrapper = shallow(<Box css="empty" text="bob@aol.com" id="3" />);
+        const html = wrapper.html();
+        expect(html).to.equal('<div class="box"><div data-id="3" class="empty">bob@aol.com</div></div>');
+    });
 
     it('should call the parents function when clicked', () => {
-    const stub = sinon.stub();
-    const wrapper = shallow(<Box click={stub} />);
-    wrapper.find('.box > div').simulate('click');
-    expect(stub.callCount).to.equal(1);
-        });
+        const stub = sinon.stub();
+        const wrapper = shallow(<Box click={stub} />);
+        wrapper.find('.box > div').simulate('click');
+        expect(stub.callCount).to.equal(1);
+    });
 
 });
 
