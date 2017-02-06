@@ -1,0 +1,15 @@
+.sum{
+    background-color: #66B7C8;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    color:navy;
+}
+.sum input{
+    background-color: white;
+}
+
+.sum button{
+    background-color: navy;
+    color:white;
+}
